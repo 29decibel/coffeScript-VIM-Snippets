@@ -159,3 +159,7 @@ snippet bbr
 			# init
 		routes:
 			'${1:router_name}' : '${2:action}'
+
+snippet bbc
+	class ${1:CollectionName} extends Backbone.Collection
+		model: ${2:Model}
