@@ -140,3 +140,22 @@ snippet expcallw
 
 snippet expncallw
 	expect(${1:predicate}).wasNotCalledWith ${2:arguments}
+
+## Snippets for Backbone class
+snippet bbm
+	class ${1:ModelName} extends Backbone.Model
+
+snippet bbv
+	class ${1:ViewName} extends Backbone.View
+		template: JST['']
+		initialize: ->
+			# ini
+		render: ->
+			# $el.append()
+
+snippet bbr
+	class ${1:RouterName} extends Backbone.Router
+		initialize: ->
+			# init
+		routes:
+			'${1:router_name}' : '${2:action}'
