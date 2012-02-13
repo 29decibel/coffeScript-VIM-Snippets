@@ -148,10 +148,10 @@ snippet bbm
 snippet bbv
 	class ${1:ViewName} extends Backbone.View
 		template: JST['']
-		initialize: ->
+		initialize: (options)->
 			# ini
-		render: ->
-			# $el.append()
+		render: =>
+			# $(@el).html(@template())
 
 snippet bbr
 	class ${1:RouterName} extends Backbone.Router
